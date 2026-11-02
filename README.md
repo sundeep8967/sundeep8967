@@ -27,8 +27,8 @@ While most Salesforce developers only build on top of the platform, I actively c
 
 | Package | Pull Request | Impact | Status |
 | :--- | :--- | :--- | :---: |
-| **`@lwc/engine-dom`** | **[PR #5906](https://github.com/salesforce/lwc/pull/5906)** | Refactored DOM engine by deprecating legacy `buildCustomElementConstructor` in favor of standard constructor access | `In Review` |
-| **`@lwc/engine-core`** | **[PR #5893](https://github.com/salesforce/lwc/pull/5893)** | Fixed VDOM attribute synchronization to cleanly remove attributes when bound props evaluate to `null` or `undefined` | `In Review` |
+| **`@lwc/engine-dom`** | **[PR #5906](https://github.com/salesforce/lwc/pull/5906)** | Refactored DOM engine by deprecating legacy `buildCustomElementConstructor` in favor of standard constructor access | **`Approved by Salesforce`** ✅ |
+| **`@lwc/engine-core`** | **[PR #5893](https://github.com/salesforce/lwc/pull/5893)** | Fixed VDOM attribute synchronization to cleanly remove attributes when bound props evaluate to `null` or `undefined` | `Feedback Addressed` |
 | **`@lwc/rollup-plugin`** | **[PR #5894](https://github.com/salesforce/lwc/pull/5894)** | Fixed cross-platform module path resolution for component namespaces on Windows environments | `Closed` |
 
 ---
