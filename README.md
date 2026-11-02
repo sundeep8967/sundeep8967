@@ -1,46 +1,65 @@
+<div align="center">
+
 # Sundeep
+### Salesforce Developer • Lightning Web Components (LWC) Specialist
 
-Software engineer focused on **cross-platform mobile engineering (Flutter & Swift)** and **backend infrastructure**, with active contributions to major open-source developer tooling.
+<p align="center">
+  <img src="https://img.shields.io/badge/Salesforce-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white" alt="Salesforce" />
+  <img src="https://img.shields.io/badge/LWC-00A1E0?style=for-the-badge&logo=lightning&logoColor=white" alt="LWC" />
+  <img src="https://img.shields.io/badge/Apex-1798C1?style=for-the-badge&logo=salesforce&logoColor=white" alt="Apex" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white" alt="Jest" />
+  <img src="https://img.shields.io/badge/Salesforce_DX-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white" alt="SFDX" />
+</p>
+
+<p align="center">
+  Enterprise Salesforce Developer specializing in custom <b>Lightning Web Components (LWC)</b>, <b>Apex architecture</b>, and scalable cloud integrations.<br/>
+  Core contributor to the official open-source <b><a href="https://github.com/salesforce/lwc">salesforce/lwc</a></b> engine.
+</p>
+
+</div>
 
 ---
 
-### 🌐 Upstream Open Source Contributions
+### ⚡ Core Open Source Contributor to `salesforce/lwc`
 
-Real contributions to production developer tools and runtimes:
+While most Salesforce developers only build on top of the platform, I actively contribute to the **official open-source engine** that powers Lightning Web Components across Salesforce:
 
-| Project | Contribution | Area | Status |
+| Package | Pull Request | Impact | Status |
 | :--- | :--- | :--- | :---: |
-| **[Podman Desktop](https://github.com/podman-desktop/podman-desktop)** | [PR #19934](https://github.com/podman-desktop/podman-desktop/pull/19934): Fixed container table renderer when `RepoTags` is empty | Container Tooling | **`Merged`** ✅ |
-| **[Kestra](https://github.com/kestra-io/kestra)** | [PR #21689](https://github.com/kestra-io/kestra/pull/21689): Added unit test suite for execution output components | Orchestration Core | **`Merged`** ✅ |
-| **[Kestra Plugins](https://github.com/kestra-io/plugin-azure)** | [Azure #389](https://github.com/kestra-io/plugin-azure/pull/389), [Meilisearch #117](https://github.com/kestra-io/plugin-meilisearch/pull/117), [FS #415](https://github.com/kestra-io/plugin-fs/pull/415), [Email #93](https://github.com/kestra-io/plugin-email/pull/93) | Cloud Integrations | **`Merged`** ✅ |
-| **[OpenTelemetry](https://github.com/open-telemetry/opentelemetry-collector-contrib)** | [PR #52578](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52578): Added spec-compliant UCUM unit code translations in Prometheus translator | Observability | `In Review` |
-| **[Prisma ORM](https://github.com/prisma/orm)** | [PR #30896](https://github.com/prisma/orm/pull/30896): Invalidated transaction context immediately on callback error | Database Runtime | `In Review` |
-| **[Appwrite](https://github.com/appwrite/appwrite)** | [PR #15149](https://github.com/appwrite/appwrite/pull/15149): Preserved numeric zero values in database table forms | Backend Platform | `In Review` |
+| **`@lwc/engine-dom`** | **[PR #5906](https://github.com/salesforce/lwc/pull/5906)** | Refactored DOM engine by deprecating legacy `buildCustomElementConstructor` in favor of standard constructor access | `In Review` |
+| **`@lwc/engine-core`** | **[PR #5893](https://github.com/salesforce/lwc/pull/5893)** | Fixed VDOM attribute synchronization to cleanly remove attributes when bound props evaluate to `null` or `undefined` | `In Review` |
+| **`@lwc/rollup-plugin`** | **[PR #5894](https://github.com/salesforce/lwc/pull/5894)** | Fixed cross-platform module path resolution for component namespaces on Windows environments | `Closed` |
 
 ---
 
-### 📱 Mobile & Client Applications
+### 🛠️ Salesforce Technical Expertise
 
-* **[senorita](https://github.com/sundeep8967/senorita)** — Cross-platform Flutter mobile client with automated keystore signing and release build workflows.
-* **[radiospark](https://github.com/sundeep8967/radiospark)** — Flutter audio streaming app with native background playback services in Swift (iOS) and Kotlin (Android).
-* **[interacting_bear](https://github.com/sundeep8967/interacting_bear)** — Interactive Flutter experiment integrating Rive vector state-machine animations with LLM API responses.
-* **[Trimbox](https://github.com/sundeep8967/Trimbox)** — Native macOS/iOS utility application written in Swift.
+#### 1. Frontend & UI Architecture (LWC & SLDS)
+* **Custom LWC Development**: Designing reusable, accessible, and responsive component libraries adhering to the **Salesforce Lightning Design System (SLDS)**.
+* **Component Communication**: Pub/Sub via **Lightning Message Service (LMS)**, Custom DOM Events (`bubbles`, `composed`), and parent-child communication.
+* **Wire Service & Data**: Reactive wire adapters (`@wire(getRecord)`), custom apex method bindings, and client-side caching management.
+* **Aura to LWC Migration**: Modernizing legacy Aura components into high-performance, standards-compliant LWC.
+
+#### 2. Backend Architecture (Apex & SOQL)
+* **Apex Development**: Custom trigger handler frameworks, domain-driven design, and governor-limit compliant business logic.
+* **Data Optimization**: Bulkified SOQL/SOSL queries, selective indexing, relationship queries, and transactional integrity.
+* **Asynchronous Processing**: Scalable batch architectures via **Batchable**, **Queueable**, **Schedulable**, and `@future` methods.
+
+#### 3. Integrations & Platform Events
+* **APIs & Web Services**: Building custom REST / SOAP inbound and outbound integrations with Named Credentials.
+* **Event-Driven Architecture**: Decoupled messaging using **Platform Events** and **Change Data Capture (CDC)**.
+
+#### 4. Developer Tooling & Quality Assurance
+* **Salesforce DX (SFDX)**: Modern source-driven development using Scratch Orgs, `sf` CLI, and Second-Generation Packaging (2GP).
+* **Automated Unit Testing**: Comprehensive Apex unit tests (maintaining >85% code coverage with mock callouts) and LWC client tests using **Jest** (`@salesforce/sfdx-lwc-jest`).
 
 ---
 
-### ⚙️ Backend & Systems Projects
+### 📜 Trailhead & Certifications
 
-* **[flashring-kv](https://github.com/sundeep8967/flashring-kv)** — Distributed in-memory key-value store implementing consistent hashing with virtual nodes and replication.
-* **[bedrock-sentinel](https://github.com/sundeep8967/bedrock-sentinel)** — Policy verification and token guardrail proxy for LLM agent workflows on AWS Bedrock.
-* **[aegis-zk](https://github.com/sundeep8967/aegis-zk)** — Zero-knowledge proof verification pipeline and arithmetic circuits written in Circom.
-
----
-
-### 🛠️ Real Tech Stack
-
-* **Languages**: Python • Dart • Swift • Go • TypeScript
-* **Mobile**: Flutter • Native iOS (Swift) • Native Android (Kotlin)
-* **Backend & Cloud**: Docker • AWS • GCP • PostgreSQL • Redis • Git • GitHub Actions
+* **Trailblazer Profile**: [trailblazer.me/id/sundeep](https://www.salesforce.com/trailblazer)
+* **Focus Areas**: Platform Developer • LWC Specialist • Enterprise Architecture
 
 ---
 
